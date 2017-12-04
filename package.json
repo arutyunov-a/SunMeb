@@ -1,0 +1,31 @@
+{
+  "name": "zahystprom",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "owl.carousel": "^2.2.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.13",
+    "gulp-concat": "^2.6.1",
+    "gulp-concat-css": "^2.3.0",
+    "gulp-sass": "^3.1.0",
+    "gulp-uglify": "^3.0.0",
+    "gulp.spritesmith": "^6.5.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/88Sokoloff/zahystprom.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/88Sokoloff/zahystprom/issues"
+  },
+  "homepage": "https://github.com/88Sokoloff/zahystprom#readme",
+  "description": ""
+}
