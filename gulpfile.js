@@ -7,6 +7,9 @@ var uglifyJS = require('gulp-uglify');
 var spritesmith = require('gulp.spritesmith');
 var browserSync = require('browser-sync');
 
+// var gulpFont = require('gulp-font');
+
+
 gulp.task ('html', function() {
   return gulp.src('src/*.html')
     .pipe(gulp.dest('dist'))
@@ -16,14 +19,14 @@ gulp.task ('html', function() {
 gulp.task ('img', function() {
   return gulp.src('src/img/*')
     .pipe(gulp.dest('dist/img'))
+    .pipe(browserSync.stream())
+});
+gulp.task ('fonts', function() {
+  return gulp.src('src/fonts/**/*.{ttf,eot,woff}')
+    .pipe(gulp.dest('dist/fonts'))
     .pipe(browserSync.stream());
 });
 
-gulp.task ('pdf', function() {
-  return gulp.src('src/*.pdf')
-    .pipe(gulp.dest('dist'))
-    .pipe(browserSync.stream());
-});
 
 gulp.task ('css', ['sprites'], function() {
   return gulp.src('src/css/main.sass')
@@ -51,7 +54,7 @@ gulp.task('scripts', function() {
 });
 
 
-gulp.task('server', ['img', 'css', 'scripts', 'html', 'pdf'], function() {
+gulp.task('server', ['img', 'css', 'scripts', 'html', 'fonts'], function() {
     browserSync({
         server: {
             baseDir: 'dist'
@@ -62,8 +65,8 @@ gulp.task('server', ['img', 'css', 'scripts', 'html', 'pdf'], function() {
     gulp.watch(["src/css/*"], ['css']);
     gulp.watch(["src/js/*"], ['scripts']);
     gulp.watch(["src/img/*"], ['sprites']);
-    gulp.watch("src/*.pdf", ['pdf']);
     gulp.watch("src/*.html", ['html']).on('change', browserSync.reload);
+
 
 });
 
