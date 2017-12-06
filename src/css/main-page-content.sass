@@ -50,6 +50,7 @@ main
 		h4
 			width: 78%
 			margin: 20px auto
+			font-size: 14px
 			text-align: center
 		img
 			display: block
@@ -70,66 +71,50 @@ main
 
 	&_testimonials
 		position: absolute
+		display: none
 		right: 20px
+		top: -1px
+		ul
+			display: inline-block
+			padding: 0
+			margin: 0
+			list-style: none
+			transform: rotate(180deg)
+			&>li
+				transform: rotate(-180deg)
+				display: inline-block
+				width: 15px
+				height: 15px
+		a
+			font-family: 'ProximaNova-Light', 'Georgia', sans-serif
+			font-size: 10px
+			color: #222223
+			&:hover
+				color: #065677
 
-/*sprite with stars*/
-#reviewStars-input input:checked ~ label, #reviewStars-input label, #reviewStars-input label:hover, #reviewStars-input label:hover ~ label
-  background: url('../img/rate-stars.png') no-repeat
-
-#reviewStars-input  
-  /*fix floating problems*/
-  overflow: hidden
-  *zoom: 1
-  /*end of fix floating problems*/
-  
-  position: relative
-  float: left
-
-#reviewStars-input input
-  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0)
-  opacity: 0
-  
-  width: 43px
-  height: 40px
-  
-  position: absolute
-  top: 0
-  z-index: 0
-
-#reviewStars-input input:checked ~ label 
-  background-position: 0 -40px
-  height: 40px
-  width: 43px
-
-#reviewStars-input label
-  background-position: 0 0
-  height: 40px
-  width: 43px
-  float: right
-  cursor: pointer
-  margin-right: 10px
-  
-  position: relative
-  z-index: 1
-
-#reviewStars-input label:hover, #reviewStars-input label:hover ~ label
-  background-position: 0 -40px
-  height: 40px
-  width: 43px
-
-#reviewStars-input #star-0
-  left: 0px
-#reviewStars-input #star-1
-  left: 53px
-#reviewStars-input #star-2
-  left: 106px
-#reviewStars-input #star-3
-  left: 159px
-#reviewStars-input #star-4 
-  left: 212px
-#reviewStars-input #star-5
-  left: 265px
+.rate_on
+	background: url(../img/rate-stars.png) -30px 0 no-repeat
+.rate_off
+	background: url(../img/rate-stars.png) 0 0 no-repeat
 
 .leader_leave-testimonial
-		position: absolute
-		display: none
+	display: block
+	position: absolute
+	right: 20px
+	top: -1px
+	p
+		display: inline-block
+		font-family: 'ProximaNova-Light', 'Georgia', sans-serif
+		font-size: 10px
+		margin: 0
+		color: #222223
+		&:hover
+			color: #065677
+
+.testimonial_pic
+	display: inline-block
+	width: 15px
+	height: 15px
+	background: url(../img/testimonial.png) 0 0 no-repeat
+	&:hover
+		background-position: -30px 0
