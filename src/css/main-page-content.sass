@@ -6,6 +6,8 @@ main
 	padding: 0 3.5%
 	&_header
 		font-family: 'ProximaNova-Extrabld', 'Georgia', sans-serif
+		margin-top: 45px
+		margin-bottom: 35px
 		padding: 0
 		font-size: 18px
 	&_item
@@ -14,7 +16,7 @@ main
 		&__img
 			float: left
 			width: 90px
-			height: 90px
+			height: 65px
 			background: url(../img/advantages.png) 5px 0 no-repeat
 			overflow: hidden
 			&2
@@ -31,18 +33,38 @@ main
 				font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
 				font-size: 14px
 				
-.leader
+.responsive
 
+.slick-prev, .slick-next
+	content: ''
+	width: 36px
+	height: 36px
+	border: 1px solid #d0d0d0
+	border-radius: 50%
+	&:hover
+		color: #065677
+		border-color: #065677
+.slick-next
+
+.leader
+	position: relative
+
+	&:last-child
+		margin-left: 0
 	&_header
 		@extend .advantages_header
+		margin-top: 45px
+		margin-bottom: 35px
 		padding: 3.5%
-		margin: 0
 		padding-top: 0
+		padding-bottom: 0
 		text-transform: uppercase
 
 	&_item
 		display: inline-block
+		max-width: 239px
 		border: 1px #c7c7c7 solid
+		margin-left: 15px
 		text-decoration: none
 		color: #222223
 		&:hover
@@ -64,14 +86,14 @@ main
 		font-family: 'ProximaNova-Bold', 'Georgia', sans-serif
 		color: #00a0e3
 		font-size: 18px
-		margin-left: 20px
+		margin-left: 10px
 		span
 			font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
 			font-size: 12px
 
 	&_testimonials
 		position: absolute
-		display: none
+		display: block
 		right: 20px
 		top: -1px
 		ul
@@ -83,8 +105,8 @@ main
 			&>li
 				transform: rotate(-180deg)
 				display: inline-block
-				width: 15px
-				height: 15px
+				width: 14px
+				height: 14px
 		a
 			font-family: 'ProximaNova-Light', 'Georgia', sans-serif
 			font-size: 10px
@@ -98,7 +120,7 @@ main
 	background: url(../img/rate-stars.png) 0 0 no-repeat
 
 .leader_leave-testimonial
-	display: block
+	display: none
 	position: absolute
 	right: 20px
 	top: -1px
@@ -115,6 +137,44 @@ main
 	display: inline-block
 	width: 15px
 	height: 15px
+	margin-right: 8px
 	background: url(../img/testimonial.png) 0 0 no-repeat
-	&:hover
-		background-position: -30px 0
+	
+.leader_leave-testimonial a:hover > div
+	background-position: -30px 0
+
+.leader_action-buttons
+	display: flex
+	justify-content: space-around
+	margin-bottom: 17px
+	div
+		display: inline-block
+		width: 40px
+		height: 25px
+		background: url(../img/product-icons.png) 0 0 no-repeat
+	.basket:hover
+		background-position-y: -40px
+	.like
+		background-position-x: -38px
+		&:hover
+			background-position-y: -40px
+	.compare
+		background-position-x: -80px
+		background-position-y: -1px
+		&:hover
+			background-position-y: -40px
+
+.main-about
+	font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
+	font-size: 12px
+	padding: 17px 27px
+	margin: 43px 0
+	background-color: #e7e7e7
+	&_header
+		font-family: 'ProximaNova-Extrabld', 'Georgia', sans-serif
+		font-size: 18px
+		text-transform: uppercase
+		margin: 0 10px
+	ul
+		margin: 15px
+		padding: 0
