@@ -1,0 +1,182 @@
+main
+	color: #222223
+
+.advantages
+	text-transform: uppercase
+	padding: 0 3.5%
+	&_header
+		font-family: 'ProximaNova-Extrabld', 'Georgia', sans-serif
+		margin-top: 45px
+		margin-bottom: 24px
+		padding: 0
+		font-size: 18px
+	&_item
+		display: inline-block
+		width: 24%
+		&__img
+			float: left
+			width: 90px
+			height: 65px
+			background: url(../img/advantages.png) 6px 0 no-repeat
+			overflow: hidden
+			&2
+				background-position: -75px 0
+			&3
+				width: 120px
+				background-position: -165px 0
+			&4
+				background-position: -275px 0
+		&__description
+				float: left
+				width: 92px
+				padding-left: 15px
+				font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
+				font-size: 14px
+				
+.responsive
+
+.slick-prev, .slick-next
+	content: ''
+	width: 36px
+	height: 36px
+	padding-bottom: 2px
+	padding-right: 2px
+	border: 1px solid #d0d0d0
+	border-radius: 50%
+	&:hover
+		color: #065677
+		border-color: #065677
+.slick-next
+	padding-left: 4px
+.leader
+	position: relative
+
+	&:last-child
+		margin-left: 0
+	&_header
+		@extend .advantages_header
+		margin-top: 45px
+		margin-bottom: 35px
+		padding: 3.5%
+		padding-top: 0
+		padding-bottom: 0
+		text-transform: uppercase
+
+	&_item
+		display: inline-block
+		max-width: 239px
+		border: 1px #c7c7c7 solid
+		margin-left: 15px
+		text-decoration: none
+		color: #222223
+		&:hover
+			border-color: #00a0e3
+		h4
+			width: 78%
+			margin: 20px auto
+			font-size: 14px
+			text-align: center
+		img
+			display: block
+			width: 78%
+			margin: 0 auto
+
+	&_relative
+		position: relative
+
+	&_price
+		font-family: 'ProximaNova-Bold', 'Georgia', sans-serif
+		color: #00a0e3
+		font-size: 18px
+		margin-left: 10px
+		span
+			font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
+			font-size: 12px
+
+	&_testimonials
+		position: absolute
+		display: block
+		right: 20px
+		top: -1px
+		ul
+			display: inline-block
+			padding: 0
+			margin: 0
+			list-style: none
+			transform: rotate(180deg)
+			&>li
+				transform: rotate(-180deg)
+				display: inline-block
+				width: 14px
+				height: 14px
+		a
+			font-family: 'ProximaNova-Light', 'Georgia', sans-serif
+			font-size: 10px
+			color: #222223
+			&:hover
+				color: #065677
+
+.rate_on
+	background: url(../img/rate-stars.png) -30px 0 no-repeat
+.rate_off
+	background: url(../img/rate-stars.png) 0 0 no-repeat
+
+.leader_leave-testimonial
+	display: none
+	position: absolute
+	right: 20px
+	top: -1px
+	p
+		display: inline-block
+		font-family: 'ProximaNova-Light', 'Georgia', sans-serif
+		font-size: 10px
+		margin: 0
+		color: #222223
+		&:hover
+			color: #065677
+
+.testimonial_pic
+	display: inline-block
+	width: 15px
+	height: 15px
+	margin-right: 8px
+	background: url(../img/testimonial.png) 0 0 no-repeat
+	
+.leader_leave-testimonial a:hover > div
+	background-position: -30px 0
+
+.leader_action-buttons
+	display: flex
+	justify-content: space-around
+	margin-bottom: 17px
+	div
+		display: inline-block
+		width: 40px
+		height: 25px
+		background: url(../img/product-icons.png) 0 0 no-repeat
+	.basket:hover
+		background-position-y: -40px
+	.like
+		background-position-x: -38px
+		&:hover
+			background-position-y: -40px
+	.compare
+		background-position-x: -80px
+		background-position-y: -1px
+		&:hover
+			background-position-y: -40px
+
+.main-about
+	font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
+	font-size: 12px
+	padding: 17px 27px
+	margin: 43px 0
+	background-color: #e7e7e7
+	&_header
+		font-family: 'ProximaNova-Extrabld', 'Georgia', sans-serif
+		font-size: 18px
+		text-transform: uppercase
+		margin: 0 10px
+	ul
+		margin: 15px
+		padding: 0
