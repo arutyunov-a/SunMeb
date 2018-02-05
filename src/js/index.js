@@ -94,8 +94,6 @@ $(document).ready(function() {
 	$('.responsive').slick({
 	  dots: false,
 	  arrows: true,
-	  // prevArrow: '<div class="prev_arrow"></div>',
-	  // nextArrow: '<div class="prev_arrow"></div>',
 	  infinite: true,
 	  speed: 750,
 	  slidesToShow: 4,
@@ -129,4 +127,18 @@ $(document).ready(function() {
 	    // instead of a settings object
 	  ]
 	});
+
+  //Product picture switcher
+  $(".product_pic__nav").on('click', 'img', function() {
+    $(".product_pic__main img").removeClass("opaque");
+
+    var newImage = $(this).index();
+
+    $(".product_pic__main img").eq(newImage).addClass("opaque");
+
+    $(".product_pic__nav img").removeClass("selected-nav");
+    $(this).addClass("selected-nav");
+  });
+
 });
+

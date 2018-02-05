@@ -26,32 +26,24 @@
 
 	<main class="wrap">
 
-		<div class="path-to-product">
-			<a href="index.html" class="path-to-root">Главная</a>
-			<a href="#" class="path-to-root">Мебель для ванной</a>
-			<p>Тумба</p>
-		</div>
-
 		<div class="product_left">
 			<div class="product_pic">
 				<div class="product_pic__main">
 					<img src="img/product.jpg" alt="product">
 					<img src="img/product.jpg" alt="product">
-					<img src="img/product.jpg" alt="product">
-					<img src="img/product.jpg" alt="product">
+					<img class="opaque" src="img/product.jpg" alt="product">
 					<img src="img/product.jpg" alt="product">
 				</div>
-				<div class="product_pic_nav">
-					<img src="img/product.jpg" alt="product">
-					<img src="img/product.jpg" alt="product">
+				<div class="product_pic__nav">
+					<img class="selected-nav" src="img/product.jpg" alt="product">
 					<img src="img/product.jpg" alt="product">
 					<img src="img/product.jpg" alt="product">
 					<img src="img/product.jpg" alt="product">
 				</div>
 			</div>
 			<div class="characteristics">
-				<h3>Характеристики</h3>
-				<table>
+				<h3 class="product-header">Характеристики</h3>
+				<table cellspacing="0">
 					<tr>
 						<td>Тип</td>
 						<td>С умывальником</td>
@@ -106,7 +98,7 @@
 					</tr>
 					<tr>
 						<td>Комплектация</td>
-						<td>Доводчики, Руки, Ножки, Раковина</td>
+						<td>Доводчики, Ручки, Ножки, Раковина</td>
 					</tr>
 					<tr>
 						<td>Вес в упаковке</td>
@@ -134,12 +126,12 @@
 
 		<div class="product_right">
 			<div class="product_main-info">
-				<h3>Тумба СанМеб ЖТ 2-60 с умывальником Либра 60</h3>
+				<h3 class="product-header__main">Тумба СанМеб ЖТ 2-60 с умывальником Либра 60</h3>
 				<div class="buy-product">
-					<form action="">
-						<p class="buy-product_price">2 654 грн</p>
+					<form action="get">
+						<p class="buy-product_price">2 654 <span>грн</span></p>
 						<button class="buy-product_button">
-							<img src="img/basket.png" alt="">
+							<img src="img/basket.png" alt="Купить">
 							<p>Купить</p>
 						</button>
 					</form>
@@ -161,7 +153,7 @@
 					</div>
 				</div>
 				<div class="product_social">
-					<p class="product_social__delivery"></p>
+					<p class="product_social__delivery">Доставка от 3-х дней</p>
 					<div class="product_social__links">
 						<div class="product_social__fb"></div>
 						<div class="product_social__youtube"></div>
@@ -172,12 +164,53 @@
 				<p class="available">Есть в наличии</p>
 				<p class="not-available">Нет в наличии</p>
 			</div>
+			<!-- SERVICES (delivery, payment, guarantee) -->
+			<div class="services">
+				<div class="services_delivery">
+					<h3 class="services-header">Доставка</h3>
+					<p>Мы доставим этот товар курьером службы доставки</p>
+					<div>
+						<p>Новая почта</p>
+						<p>100 грн</p>
+					</div>
+				</div>
+				<div class="services_payment">
+					<h3 class="services-header">Оплата</h3>
+					<p>Наличными, Безналичными, Кредит, Visa/MasterCard, Мгновенная расстрочка</p>
+				</div>
+				<div class="services_guarantee">
+					<h3 class="services-header">Гарантия</h3>
+					<p>24 месяца официальной гарантии от производителя обмен/возврат товара в течение 14 дней</p>
+				</div>
+			</div>
+			<!-- Leave testimonial form -->
+			<div class="testimonial">
+				<h3 class="product-header">Отзыв о товаре</h3>
+				<ul class="rate">
+					<li class="rate_star"></li>
+					<li class="rate_star"></li>
+					<li class="rate_star"></li>
+					<li class="rate_star"></li>
+					<li class="rate_star"></li>
+				</ul>
+				<form action="get" class="testimonial-form">
+					<label class="advantages">Достоинства<br><textarea name="advantages"></textarea></label>
+					<label class="disadvantages">Недостатки<br><textarea name="disadvantages"></textarea></label>
+					<label class="comment">Комментарий<br><textarea name="comment"></textarea></label>
+					<label class="username">Ваше имя<br><input type="text"></label>
+					<label class="usercontacts">Эл. почта или телефон<br><input type="text"></label>
+					<label class="notify"><input type="checkbox">Уведомить об ответах по эл. почте</label>
+					<p>Важно!</p>
+					<p>Чтобы Ваш отзыв либо комментарий прошел модерацию и был <br> опубликован, ознакомьтесь, пожалуйста, с нашими правилами!</p>
+					<input type="button">Оставить отзыв</input>
+				</form>
+			</div>
 		</div>
 
-<!-- ALSO BOUGHT -->
+		<!-- ALSO BOUGHT -->
 
 		<section class="leader">
-			<h3 class="leader_header">Специальные предложения</h3>
+			<h3 class="leader_header">С этим товаром также покупают</h3>
 			<div class="responsive">
 				<a href="#" class="leader_item">
 					<h4>Тумба СанМеб Жт 2-60 с умывальником Либра 60</h4>
