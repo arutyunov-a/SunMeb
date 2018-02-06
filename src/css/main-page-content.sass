@@ -1,7 +1,7 @@
 main
 	color: #222223
 
-.advantages
+.our-advantages
 	text-transform: uppercase
 	padding: 0 3.5%
 	&_header
@@ -32,9 +32,9 @@ main
 				padding-left: 15px
 				font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
 				font-size: 14px
-				
-.responsive
-
+				&3
+					width: 90px
+	
 .slick-prev, .slick-next
 	content: ''
 	width: 36px
@@ -50,11 +50,12 @@ main
 	padding-left: 4px
 .leader
 	position: relative
-
+	clear: both
 	&:last-child
 		margin-left: 0
 	&_header
-		@extend .advantages_header
+		font-family: 'ProximaNova-Extrabld', 'Georgia', sans-serif
+		font-size: 18px
 		margin-top: 45px
 		margin-bottom: 35px
 		padding: 3.5%
@@ -110,9 +111,13 @@ main
 				width: 14px
 				height: 14px
 		a
+			position: relative
+			top: 3px
+			left: 3px
 			font-family: 'ProximaNova-Light', 'Georgia', sans-serif
 			font-size: 10px
 			color: #222223
+			margin-bottom: 0
 			&:hover
 				color: #065677
 
@@ -149,6 +154,7 @@ main
 	display: flex
 	justify-content: space-around
 	margin-bottom: 17px
+	font-size: 10px
 	div
 		display: inline-block
 		width: 40px

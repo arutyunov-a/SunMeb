@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>SunMeb</title>
+
 	<link rel="stylesheet" type="text/css" href="slick/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/>
 	<link rel="stylesheet" href="css/main.css" type="text/css">
@@ -15,6 +16,7 @@
   crossorigin="anonymous"></script>
 	<script src="slick/slick.js"></script>	
 	<script src="js/scripts.js"></script>
+
 </head>
 <body>
 
@@ -60,7 +62,7 @@
 						<div class="header-icon"></div>
 						<p>Желания</p>
 					</a>
-					<a href="#" class="basket">
+					<a href="#" class="header-basket">
 						<div class="header-icon"></div>
 						<p>Корзина</p>
 					</a>
@@ -97,16 +99,16 @@
 			  <div class="slide_viewer">
 			    <div class="slide_group">
 			      <div class="slide">
-			    	<img src="img/slide-top.png"/>
+			    	<img  class="slider-img"src="img/slide-top.png"/>
 			      </div>
 			      <div class="slide">
-			    	<img src="img/mac.png"/>
+			    	<img  class="slider-img"src="img/mac.png"/>
 			      </div>
 			      <div class="slide">
-			      	<img src="img/slide-top.png"/>
+			      	<img class="slider-img" src="img/slide-top.png"/>
 			      </div>
 			      <div class="slide">
-			      	<img src="img/mac.png"/>
+			      	<img class="slider-img" src="img/mac.png"/>
 			      </div>
 			    </div>
 			  </div>
@@ -115,29 +117,28 @@
 			<div class="slide_buttons">
 			</div>
 
-			<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
 		</div>
 	</header>
 
-		<main class="wrap">
+	<main class="wrap">
 
-		<section class="advantages">
-			<h3 class="advantages_header">Наши преимущества</h3>
-			<div class="advantages_item">
-				<div class="advantages_item__img advantages_item__img1"></div>
-				<p class="advantages_item__description">Цена от производителя</p>
+		<section class="our-advantages">
+			<h3 class="our-advantages_header">Наши преимущества</h3>
+			<div class="our-advantages_item">
+				<div class="our-advantages_item__img our-advantages_item__img1"></div>
+				<p class="our-advantages_item__description">Цена от производителя</p>
 			</div>
-			<div class="advantages_item">
-				<div class="advantages_item__img advantages_item__img2"></div>
-				<p class="advantages_item__description">Сервис <br>и гарантия</p>
+			<div class="our-advantages_item">
+				<div class="our-advantages_item__img our-advantages_item__img2"></div>
+				<p class="our-advantages_item__description">Сервис <br>и гарантия</p>
 			</div>
-			<div class="advantages_item">
-				<div class="advantages_item__img advantages_item__img3"></div>
-				<p class="advantages_item__description advantages_item__description3">Доставка <br>по Украине</p>
+			<div class="our-advantages_item">
+				<div class="our-advantages_item__img our-advantages_item__img3"></div>
+				<p class="our-advantages_item__description our-advantages_item__description3">Доставка <br>по Украине</p>
 			</div>
-			<div class="advantages_item">
-				<div class="advantages_item__img advantages_item__img4"></div>
-				<p class="advantages_item__description">Безопасная оплата</p>
+			<div class="our-advantages_item">
+				<div class="our-advantages_item__img our-advantages_item__img4"></div>
+				<p class="our-advantages_item__description">Безопасная оплата</p>
 			</div>
 		</section>
 
@@ -481,13 +482,36 @@
 		</section>
 	</main>
 
+	<div class="subscription wrap">
+		<div class="dispatch">
+			<p>РАССЫЛКА</p>
+		</div>
+		<div class="search-form">
+			<form method="get" action="http://" role="search" class="search">
+				<input type="email" name="s" placeholder="Введите Ваш e-mail">
+				<button class="search-submit search_img" type="submit" role="button"></button>
+			</form>
+		</div>
+		<div class="subscription-box">
+			<p>ПОДПИШИТЕСЬ НА НАШИ ОБНОВЛЕНИЯ:</p>
+		</div>
+
+		<div class="sprites">
+			<ul class="sprite_social">
+				<li><a href="https://www.facebook.com" class="social_facebook" target="_blank" title="Facebook"></a></li>
+     			<li><a href="https://www.youtube.com" class="social_youtube" target="_blank" title="Youtube"></a></li>
+     			<li><a href="https://www.instagram.com" class="social_instagram" target="_blank" title="Instagram"></a></li>
+			</ul>
+		</div>
+	</div>	
+
 	<footer>
 		<div class="wrap">
 			<div class="row">
 				<div class="col-one">
 					<div class="logo-end">
 					<a href="/" class="footer-logo">
-						<img src="/img/logo-sanmeb-end.png" alt="SAN MEB">
+						<img class="footer-logo__img" src="/img/logo-sanmeb-end.png" alt="SAN MEB">
 					</a>
 					</div>
 					<p class="footer-feedback">Интернет-магазин мебели для <br> 
@@ -587,7 +611,8 @@
 			
 		</div>
 	</footer>
-	<a href="#" id="popup__toggle" onclick="return false;"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
-<script type="text/javascript" src="js/scripts.js"></script>
+
+  <a href="#" id="popup__toggle" onclick="return false;"><div class="circlephone" style="transform-origin: center;"></div><div class="circle-fill" style="transform-origin: center;"></div><div class="img-circle" style="transform-origin: center;"><div class="img-circleblock" style="transform-origin: center;"></div></div></a>
+
 </body>
 </html>

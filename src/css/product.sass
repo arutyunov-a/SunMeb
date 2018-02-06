@@ -1,0 +1,293 @@
+.product_left
+	width: 505px
+	float: left
+	font-size: 12px
+	margin-bottom: 60px
+
+.product_pic
+	height: 400px
+.product_pic__main
+	position: relative
+	width: 75%
+	height: 400px
+	float: left
+	img
+		position: absolute
+		display: block
+		top: calc(50% - 150px)
+		left: calc(50% - 135px)
+		width: 270px
+		margin: 0 auto
+		-webkit-transition: opacity 1s ease-in-out
+	  -moz-transition: opacity 1s ease-in-out
+	  -o-transition: opacity 1s ease-in-out
+	  transition: opacity 1s ease-in-out
+		opacity: 0
+		&.opaque
+			opacity: 1
+.product_pic__nav
+	width: 25%
+	float: right
+	img
+		display: block
+		width: 70%
+		margin: 0 auto
+		padding: 10px
+		cursor: pointer
+		box-sizing: border-box
+		&:hover
+			border: 1px solid #00a0e3
+			padding: 9px
+		&.selected-nav
+			border: 1px solid #00a0e3
+			padding: 9px
+
+.product-header
+	font-family: 'ProximaNova-Bold', 'Georgia', sans-serif
+	font-size: 14px
+	color: #0fa6e5
+	text-transform: uppercase
+	margin: 20px
+	&__main
+		font-family: 'ProximaNova-Extrabld', 'Georgia', sans-serif
+		font-size: 18px
+		color: #00a0e3
+		text-transform: uppercase
+		margin-top: 0
+
+.characteristics
+	margin-top: 40px
+
+tr:nth-child(odd)
+		background-color: #ebebeb
+td
+	height: 30px
+	width: 250px
+	padding: 5px 20px
+
+.product_right
+	@extend .product_left
+	float: right
+
+.buy-product
+	display: inline-block
+	width: 104px
+	height: 60px
+	padding: 16px 10px
+	background-color: #d9f1fb
+	&_price
+		font-family: 'ProximaNova-Bold', 'Georgia', sans-serif
+		font-size: 24px
+		margin: 0
+		text-align: center
+		span
+			font-family: 'ProximaNova-Regular', 'Georgia', sans-serif
+			font-size: 16px
+			margin: 0
+	&_button
+		position: relative
+		display: block
+		width: 100%
+		padding: 0
+		background-color: #0fa6e5
+		border: none
+		cursor: pointer
+		&:hover
+			box-shadow: 0 0 2px 0 #0fa6e5
+		img
+			position: absolute
+			top: 6px
+			left: 7px
+			width: 22px
+			height: 20px
+		p
+			font-family: 'ProximaNova-Bold', 'Georgia', sans-serif
+			font-size: 14px
+			color: #fff
+			text-transform: uppercase
+			margin: 8px 10px
+			text-align: right
+
+.customer
+	position: relative
+	top: 15px
+	display: inline-block
+	width: 206px
+	&_testimonials__pos
+		top: -40px
+		left: 30px
+		a
+			left: 10px
+.customer_action-buttons
+	margin-bottom: 0
+	a
+		width: 50px
+		height: 35px
+		color: #222
+		background: url(../img/product-icons.png) 0 0 no-repeat
+		p
+			margin: 30px 0 0 0
+	.like
+		background-position-x: -30px
+
+.product_social
+	position: relative
+	top: 5px
+	display: inline-block
+	width: 168px
+	&__delivery
+		text-align: center
+		color: #f00
+	&__links
+		display: flex
+		justify-content: space-around
+	&__fb
+		width: 34px
+		height: 34px
+		border-radius: 17px
+		background-image: url('../img/facebook.svg')
+	&__youtube
+		@extend .product_social__fb
+		background-image: url('../img/youtube.svg')
+	&__instagram
+		@extend .product_social__fb
+		background-image: url('../img/instagram.svg')
+		
+.vendor
+	display: inline-block
+	width: 124px
+	font-size: 14px
+	margin: 28px 0
+	span
+		color: #065677
+
+.available
+	display: inline-block
+	margin-left: 36px
+	font-size: 14px
+	text-decoration: underline
+	color: #05a911
+.not-available
+	display: inline-block
+	margin-left: 36px
+	font-size: 14px
+	text-decoration: underline
+	color: #f00
+	position: relative
+	right: 130px
+.display-none
+	visibility: hidden
+	
+.services
+	display: flex
+	justify-content: space-between
+	padding-bottom: 23px
+	border-top: 1px solid #c7c7c7
+	border-bottom: 1px solid #c7c7c7
+	h3
+		font-family: 'ProximaNova-Bold', 'Georgia', sans-serif
+		font-size: 14px
+		margin-top: 28px
+		color: #065677
+		text-transform: uppercase
+.services_new-post
+			display: flex
+			justify-content: space-between
+	
+.services > div
+	width: 150px
+
+.testimonial
+	margin-top: 70px
+
+.rate
+	display: flex
+	justify-content: space-between
+	width: 306px
+	margin: 0 auto 55px
+	transform: rotate(180deg)
+	&_star
+		position: relative
+		width: 50px
+		height: 45px
+		background-image: url('../img/rate-star-big-off.png')
+		background-size: cover
+		background-repeat: no-repeat
+		cursor: pointer
+		transform: rotate(-180deg)
+		&:hover
+			background-image: url('../img/rate-star-big-on.png')
+		p
+			position: absolute
+			bottom: -35px
+			width: 100%
+			font-size: 9px
+			text-align: center
+			white-space: nowrap
+.rate_star__on
+	background-image: url('../img/rate-star-big-on.png')
+.rate_star:hover ~ .rate_star
+	background-image: url('../img/rate-star-big-on.png')
+
+.testimonial-textarea
+	display: block
+	width: 505px
+	height: 40px
+	margin: 14px 0
+	padding: 5px 15px
+	box-sizing: border-box
+	resize: none
+textarea[name="comment"]
+	height: 130px
+
+input[type="checkbox"]
+	display: none
+	& + p::before
+		content: ''
+		position: relative
+		right: 10px
+		top: 5px
+		display: inline-block
+		width: 18px
+		height: 18px
+		box-sizing: border-box
+		border: 1px solid #c7c7c7
+	&:checked + p::after
+		content: ''
+		position: relative
+		right: 211px
+		display: inline-block
+		width: 7px
+		height: 7px
+		background-color: #00a0e3
+
+.notify
+	cursor: pointer
+	p
+		position: relative
+		top: -5px
+		left: 10px
+		margin-bottom: 6px
+		display: inline-block
+
+.testimonial-form > p
+	font-style: italic
+	font-size: 10px
+	span
+		color: #f00
+
+.testimonial_button
+	display: block
+	width: 170px
+	height: 30px
+	margin-top: 40px
+	background-color: #12a7e5
+	font-family: 'ProximaNova-Bold', 'Georgia', sans-serif
+	font-size: 14px
+	color: #fff
+	text-align: center
+	text-transform: uppercase
+	border: none
+	cursor: pointer
+	&:hover
+		box-shadow: 0 0 4px 0 #12a7e5
