@@ -1,4 +1,3 @@
-
 $(document).ready(function() {
   $('.slider').each(function() {
   var $this = $(this);
@@ -90,7 +89,6 @@ $(document).ready(function() {
   advance();
 });
 
-  
 	$('.responsive').slick({
 	  dots: false,
 	  arrows: true,
@@ -141,4 +139,3 @@ $(document).ready(function() {
   });
 
 });
-
