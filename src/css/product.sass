@@ -229,7 +229,7 @@ td
 .rate_star:hover ~ .rate_star
 	background-image: url('../img/rate-star-big-on.png')
 
-textarea
+.testimonial-textarea
 	display: block
 	width: 505px
 	height: 40px
@@ -239,8 +239,7 @@ textarea
 	resize: none
 textarea[name="comment"]
 	height: 130px
-input:not([type="checkbox"], [type="button"])
-	@extend textarea
+
 input[type="checkbox"]
 	display: none
 	& + p::before
